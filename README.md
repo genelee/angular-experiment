@@ -18,12 +18,10 @@ angular.module('mainApplication', ['tiny.experiment'])
 2) Register experiment
 see: https://github.com/genelee/tiny-experiment
 
-3) Use in javascript
+3) Use in javascript with $experiment service
 ```
-angular.module('mainApplication')
-.controller('mainController', [
-  '$experiment',
-function($experiment) {
+angular.module('mainApplication').controller('mainController', ['$experiment', function($experiment) {
+
   $experiment.getExperiment('buttonStyle')
   .on('blue', function() {
     $('#my-button').css('backgroundColor', 'blue')
@@ -32,6 +30,7 @@ function($experiment) {
     $('#my-button').css('backgroundColor', 'red')
   })
   .run()
+  
 }])
 ```
 
