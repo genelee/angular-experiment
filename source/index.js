@@ -1,6 +1,6 @@
 import experimentManager from 'tiny-experiment';
 
-module.exports = angular.module('pb.experiment', [])
+module.exports = angular.module('tiny.experiment', [])
 
 .service('$experiment', ['$rootScope', function($rootScope) {
   
