@@ -1,5 +1,5 @@
 # angular-experiment
-Angular directive and service that wrap npm module, tiny-experiment.js
+Angular directive and a service that wrap npm package, tiny-experiment.js
 
 # Quick start
 
