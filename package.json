@@ -23,6 +23,6 @@
     "browserify": "^13.0.1"
   },
   "dependencies": {
-    "tiny-experiment": "^1.0.21"
+    "tiny-experiment": "^1.0.3"
   }
 }
