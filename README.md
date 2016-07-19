@@ -19,7 +19,21 @@ angular.module('mainApplication', ['tiny.experiment'])
 see: https://github.com/genelee/tiny-experiment
 
 3) Use in javascript
-see: https://github.com/genelee/tiny-experiment
+```
+angular.module('mainApplication')
+.controller('mainController', [
+  '$experiment',
+function($experiment) {
+  $experiment.getExperiment('buttonStyle')
+  .on('blue', function() {
+    $('#my-button').css('backgroundColor', 'blue')
+  })
+  .on('red', function() {
+    $('#my-button').css('backgroundColor', 'red')
+  })
+  .run()
+}])
+```
 
 4) Use in directive without writing any javascript
 ```
