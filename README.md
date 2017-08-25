@@ -36,6 +36,6 @@ angular.module('mainApplication').controller('mainController', ['$experiment', f
 
 4) Use in directive without writing any javascript
 ```
-<div tiny-experiment="buttonStyle" variant="blue" class="blue-button"></div>
+<div tiny-experiment="buttonStyle" variant="blue" class="blue-button" default-variant="true"></div> // setting default-variant as true ensures that even if the experiment is missing, this DOM element will be rendered
 <div tiny-experiment="buttonStyle" variant="red" class="red-button"></div>
 ```
